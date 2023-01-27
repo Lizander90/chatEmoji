@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import TextMessage from './component/textMessage';
+
 
 function App() {
-
-  return 1;
+  return  <>
+    <TextMessage />
+  </>
 }
 
 export default App
