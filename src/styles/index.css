@@ -1,0 +1,65 @@
+body {
+  background-color: #fbfacd;
+}
+body #root {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+body #root .inputText {
+  background-color: #ffffff;
+  border: 1px solid #ffe15d;
+  border-radius: 4px;
+  box-shadow: -1px 0 6px rgba(248, 245, 234, 0.5);
+  padding: 3px;
+  color: #dc3535;
+}
+body #root .inputText::-moz-placeholder {
+  color: rgba(220, 53, 53, 0.4);
+}
+body #root .inputText:-ms-input-placeholder {
+  color: rgba(220, 53, 53, 0.4);
+}
+body #root .inputText::placeholder {
+  color: rgba(220, 53, 53, 0.4);
+}
+body #root .inputText:hover {
+  border-color: #dc3535;
+}
+body #root .inputText:focus {
+  background-color: transparent;
+  border: 1px solid rgb(186, 170, 250);
+  box-shadow: -1px 0 6px rgba(141, 93, 246, 0.5);
+}
+body #root .btnEmoji {
+  background-color: #dc3535;
+  color: #fcfcd7;
+  margin-left: 5px;
+  padding: 4px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body #root .btnEmoji:hover {
+  transform: scale(1.05);
+  box-shadow: -1px 0 6px rgba(220, 53, 53, 0.5);
+}
+body #root .btnEmoji:active {
+  transform: scale(0.9);
+}
+body #root .containerFilter {
+  max-width: 190px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(244, 157, 26, 0.4);
+  border: solid 1px rgba(220, 53, 53, 0.4);
+  border-radius: 4px;
+  box-shadow: 1px 1px 15px rgba(220, 53, 53, 0.4);
+  padding: 5px;
+}
+body #root .containerFilter .btnEmojiSelector {
+  background-color: transparent !important;
+}/*# sourceMappingURL=index.css.map */

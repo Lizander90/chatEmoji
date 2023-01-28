@@ -1,0 +1,72 @@
+body {
+  background-color: #fbfacd;
+
+  #root {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    .inputText {
+      background-color: #ffffff;
+      border: 1px solid #ffe15d;
+      border-radius: 4px;
+      box-shadow: -1px 0 6px rgba(#f8f5ea, 0.5);
+      padding: 3px;
+      color: #dc3535;
+      &::placeholder {
+        color: rgb(#dc3535, 0.4);
+      }
+      &:hover {
+        border-color: #dc3535;
+      }
+      &:focus {
+        background-color: transparent;
+        border: 1px solid rgb(186, 170, 250);
+        box-shadow: -1px 0 6px rgba(141, 93, 246, 0.5);
+        // color: #5f03b0;
+        // background-color: aqua;
+        // border: none;
+        // border-color: #a555ec;
+      }
+    }
+
+    .btnEmoji {
+      background-color: #dc3535;
+      color: #fcfcd7;
+      margin-left: 5px;
+      padding: 4px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: -1px 0 6px rgba(#dc3535, 0.5);
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+
+    .containerFilter {
+      //   position: relative;
+      //   margin-top: 10px;
+      max-width: 190px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+
+      background-color: rgb(#f49d1a, 0.4);
+      border: solid 1px rgb(#dc3535, 0.4);
+      border-radius: 4px;
+      box-shadow: 1px 1px 15px rgb(#dc3535, 0.4);
+      padding: 5px;
+
+      .btnEmojiSelector {
+        background-color: transparent !important;
+      }
+    }
+    
+  }
+}

@@ -9,9 +9,9 @@ const TextMessage = () => {
 
     console.log('desde textMessage-->' + textInputRef)
     return <>
-        <input ref={textInputRef} type={'text'} />
+        <input ref={textInputRef} type={'text'} className='inputText ' placeholder='escriba aqui' name='inputTextName'/>
         <FindEmoji ref={textInputRef} />
-        
+
     </>
 
 

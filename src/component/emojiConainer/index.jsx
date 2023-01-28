@@ -27,13 +27,13 @@ export const EmojiContainer = ({ handleClickEmoji }) => {
     return <>
         <div className='containerFilter'>
             <div className='emojisContainerButtons'>
-                <input onChange={handleFilter} placeholder='filtrar emoji' value={filter} type={'text'} name={'inputFilter'} className={'ipnutText inputFilter'} />
+                <input onChange={handleFilter} placeholder='filtrar emoji' value={filter} type={'text'} name={'inputFilter'} className={'inputText inputFilter'} />
                 <br />
                 {
                     emojisFile
                         .filter((emojiX) => handleMatch(emojiX.keyWords, filter))
                         .map((emojiX) => {
-                            return <button key={crypto.randomUUID()} onClick={() => handleClickEmoji(emojiX.symbol)}>{emojiX.symbol}</button>
+                            return <button className='btnEmoji btnEmojiSelector' key={crypto.randomUUID()} onClick={() => handleClickEmoji(emojiX.symbol)}>{emojiX.symbol}</button>
                         })}
             </div>
 

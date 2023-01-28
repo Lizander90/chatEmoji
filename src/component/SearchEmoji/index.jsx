@@ -4,11 +4,20 @@ import EmojiContainer from '../emojiConainer'
 
 const FindEmoji = ({ }, inputRef) => {
 
+    //estado q controla si abre o no modal con iconos
     const [emojiContainer, SetToogleEmojiContainer] = useState(false)
+
+    addEventListener('click', (ev) => {
+        (ev.target.name) ?? SetToogleEmojiContainer(false)
+
+        if (ev.target.name === 'inputTextName') SetToogleEmojiContainer(false)
+
+    })
 
     const handleModalEmojinToogle = () => {
         SetToogleEmojiContainer((prevValue) => !prevValue)
     }
+
 
     const handleClickEmoji = (emojiX) => {
         const inputText = inputRef.current
@@ -26,7 +35,7 @@ const FindEmoji = ({ }, inputRef) => {
     }
 
     return <>
-        <button onClick={handleModalEmojinToogle}>😊</button>
+        <button onClick={handleModalEmojinToogle} className='btnEmoji '>😊</button>
 
         {emojiContainer && <>
             <EmojiContainer isOpen={emojiContainer} handleClickEmoji={handleClickEmoji} />
@@ -36,5 +45,4 @@ const FindEmoji = ({ }, inputRef) => {
 }
 
 export { FindEmoji }
-
 export default forwardRef(FindEmoji)
